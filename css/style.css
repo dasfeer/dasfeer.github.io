@@ -1,0 +1,399 @@
+body,html,ul,li,p{
+	margin:0;
+	padding:0;
+	font-family: 'Panforte';
+}
+
+body,html{
+	background-color:#caf0fd;
+	text-align:center;
+}
+
+.wrapper{
+	display:inline-block;
+	overflow:hidden;
+	float:none;
+	width:1000px;
+	text-align:center;
+	padding:50px 0;
+}
+
+.wrapper > div{
+	display:inline-block;
+	overflow:hidden;
+	float:left;
+	width:100%;
+}
+
+.wrapper > div > div{
+	display:inline-block;
+	overflow:hidden;
+	float:left;
+	width:98%;
+}
+
+.before-start .icon-game .self-icon{
+	display:inline-block;
+	overflow:hidden;
+	float:left;
+	width:100%;
+	text-align:center;
+	height:170px;
+	margin-top:-46px;
+}
+
+.before-start .icon-game .self-icon img{
+	width:200px;
+	height:auto;
+}
+
+.before-start .title-block p{
+	font-size:54px;
+	color:black;
+	text-align:center;
+	padding:5px 0;
+}
+
+.before-start .subtitle-block p{
+	font-size:32px;
+	color:black;
+	text-align:center;
+	padding:5px 0;
+}
+
+.before-start .input-for-name input{
+	font-family: 'Panforte';
+	font-size:24px;
+	outline:none;
+	border:1px solid transparent;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	overflow:hidden;
+	text-align:left;
+	padding:10px 10px 5px;
+	margin:20px 0 30px;
+}
+
+.before-start .start-game-btn input[type="button"]{
+	display:inline-block;
+	overflow:hidden;
+	float:none;
+	margin:10px 0;
+	text-align:center;
+	font-size:24px;
+	padding:10px 20px 5px;
+	font-family: 'Panforte';
+	background-color:#4982d7;
+	color:white;
+	border:none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	cursor:pointer;
+	-webkit-transition: 0.3s ease all;
+	-o-transition: 0.3s ease all;
+	transition: 0.3s ease all;
+	outline:none;
+}
+
+.before-start .start-game-btn input[type="button"]:hover{
+	background-color:#1c4786;
+}
+.wrapper .before-start{
+	display: block;
+}
+.wrapper .after-start{
+	display:none;
+}
+
+.after-start .middle-block{
+	padding:10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	overflow:hidden;
+	background-color:white;
+}
+
+.after-start > div{
+	display:inline-block;
+	overflow:hidden;
+	float:left;
+	width:100%;
+}
+
+.after-start .title-block p{
+	font-size:42px;
+	text-align:center;
+}
+.after-start .middle-block > div{
+	display:inline-block;
+	overflow:hidden;
+	float:left;
+	width:49%;
+	border-right:1px solid #eaeaea;
+}
+
+.after-start .middle-block > div:last-of-type{
+	border:none;
+}
+
+.after-start .middle-block .subtitle-block p{
+	font-size:22px;
+	padding:10px 0;
+}
+
+.after-start .middle-block > div > div{
+	display:inline-block;
+	overflow:hidden;
+	float:left;
+	width:100%;
+}
+
+.after-start .middle-block .for-table > div{
+	display:inline-block;
+	overflow:hidden;
+	float:left;
+}
+.after-start .middle-block .for-table .info-stat{
+	width:110px;
+}
+.after-start .middle-block .for-table .info-stat > div{
+	display:inline-block;
+	overflow:hidden;
+	float:left;
+	width:100%;
+}
+
+.after-start .middle-block .for-table .info-stat .ship{
+	width:12px;
+	height:12px;
+	display:inline-block;
+	overflow:hidden;
+	float:left;
+	background-color:#9bc0f6;
+}
+.after-start .middle-block .right-block .for-table .info-stat .ship{
+	float:right;
+}
+.after-start .middle-block .left-block .info-stat{
+	text-align:left;
+	float:left;
+}
+.after-start .middle-block .right-block .info-stat{
+	text-align:right;
+	float:right;
+}
+.after-start .middle-block .for-table .info-stat > div{
+	margin-bottom:20px;
+}
+.after-start .middle-block .for-table .info-stat .ship4 .ship{
+	margin-right:1px;
+}
+
+.after-start .middle-block .for-table .info-stat .ship3 .ship{
+	margin-right: 1px;
+}
+.after-start .middle-block .for-table .info-stat .ship3 .ship.separator{
+	margin-right:10px;
+}
+.after-start .middle-block .for-table .info-stat .ship2 .ship{
+	margin-right: 1px;
+}
+
+.after-start .middle-block .for-table .info-stat .ship2 .ship.separator{
+	margin-right:10px;
+}
+
+.after-start .middle-block .for-table .info-stat .ship1 .ship.separator{
+	margin-right:10px;
+}
+
+.after-start .middle-block .left-block .for-table .more-table{
+	float:right;
+	margin-right: 20px;
+}
+.after-start .middle-block .right-block .for-table .more-table{
+	float:left;
+	margin-left:20px;
+}
+
+table tr td{
+	width:28px;
+	height:28px;
+	position:relative;
+	border-right:1px solid #cccccc;
+	border-bottom:1px solid #cccccc;
+	cursor:pointer;
+	-webkit-transition: 0.2s ease all;
+	-o-transition: 0.2s ease all;
+	transition: 0.2s ease all;
+}
+table tr td:not(:nth-child(1)):hover{
+	background-color:#daf4fa;
+}
+
+table tr td:before{
+	content:'';
+	display:inline-block;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	display:inline-block;
+}
+
+table tr td.lose:before{
+	background-image: url("../img/dot.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size:25%;
+}
+
+table tr td.bingo:before{
+	background-image:url("../img/x.png");
+	background-position: center center;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+
+table tr td.ship-intact{
+	background-color:#9bc0f6;
+}
+
+.middle-block-center{
+	display:inline-block !important;
+	width:100% !important;
+	overflow:hidden !important;
+	float:left !important;
+	margin-top:20px;
+	position: relative;
+	height:40px;
+}
+
+.middle-block-center > p{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	text-align:center;
+	font-size:28px;
+}
+
+.after-start .middle-block{
+	position:relative;
+}
+
+.after-start .middle-block .hover{
+	background-color:rgba(255,255,255,0.8);
+	z-index:100;
+	width:100%;
+	height: 100%;
+	top:0;
+	left:0;
+	position: absolute;
+	display:none;
+}
+
+
+.after-start .middle-block .hover .title-block{
+	margin-top:60px;
+}
+
+.hover #game-restart{
+	display: inline-block;
+    overflow: hidden;
+    float: none;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 20px 5px;
+    font-family: 'Panforte';
+    background-color: #4982d7;
+    color: white;
+    border: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    outline: none;
+}
+
+/*адаптация*/
+@media screen and (max-width: 1000px){
+	.wrapper{
+		width:760px;
+	}
+	.after-start .middle-block .for-table .info-stat{
+		display:none;
+	}
+	.wrapper > div > div{
+		width:96%;
+	}
+}
+
+@media screen and (max-width:770px){
+	.after-start .middle-block > div{
+		width:100%;
+		text-align:center;
+		border:none;
+	}
+	.wrapper > div > div{
+		float:none;
+	}
+	.after-start .middle-block .for-table > div{
+		float:none !important;
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+	}
+	.wrapper{
+		width:90%;
+	}
+	.wrapper > div > div{
+		width:380px;
+		padding-right:0;
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 440px){
+	.wrapper > div > div, .after-start .middle-block{
+		padding-left:0;
+		padding-right:0;
+	}
+	.wrapper > div > div{
+		width:320px;
+	}
+}
+
+@media screen and (max-width:420px){
+	table tr td{
+		width:24px;
+		height:24px;
+	}
+}
+
+@media screen and (max-width:360px){
+	table tr td{
+		width:20px;
+		height: 20px;
+	}
+	.wrapper > div > div{
+		width:270px;
+	}
+}
+/*адаптация - конец*/
+

@@ -1,3 +1,380 @@
-<frameset>
-  <frame src="http://nafikov.cf/">
-</frameset>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Морской бой</title>
+	<meta name="description" content="Игра морской бой">
+	<meta name="keywords" content="морской бой, морское сражение">
+	<meta name="author" content="Роберт Нафиков">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		table tr td.ship-intact{
+			font-size:12px;
+		}
+		table tr td.ship-intact.empty{
+			background-color:red;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="before-start">
+			<div class="icon-game">
+				<div class="self-icon">
+					<img src="img/battleship.png" alt="">
+				</div>
+			</div>
+			<div class="title-block">
+				<p>Морской бой</p>
+			</div>
+			<div class="subtitle-block">
+				<p>Для начала игры введите Ваше имя</p>
+			</div>
+			<div class="input-for-name">
+				<input type="text" name="name-gamer" placeholder="Ваше имя" id="name-gamer">
+			</div>
+			<div class="start-game-btn">
+				<input type="button" name="start-game" value="Начать игру" id="start-game">
+			</div>
+		</div>
+		<div class="after-start">
+			<div class="title-block">
+				<p>Морской бой</p>
+			</div>
+			<div class="middle-block">
+				<div class="hover">
+					<div class="title-block">
+						<p id="t1">Вы выиграли, <span id="name-s1"></span></p>
+						<p id="t2">Вы проиграли, <span id="name-s2"></span></p>
+					</div>
+					<div class="content-hover">
+						<p>Хотите сыграть еще раз?</p>
+					</div>
+					<div class="buttons">
+						<input type="button" value="Сыграть еще раз!" id="game-restart">
+					</div>
+				</div>
+				<div class="left-block">
+					<div class="subtitle-block">
+						<p>Ваше поле <span id="name-gamer"></span></p>
+					</div>
+					<div class="for-table">
+						<div class="more-table">
+							<table cellspacing="0" id="my-sea">
+								<tr>
+									<td>&nbsp;</td>
+									<td>А</td>
+									<td>Б</td>
+									<td>В</td>
+									<td>Г</td>
+									<td>Д</td>
+									<td>Е</td>
+									<td>Ж</td>
+									<td>З</td>
+									<td>И</td>
+									<td>К</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>	
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="right-block">
+					<div class="subtitle-block">
+						<p>Поле противника</p>
+					</div>
+					<div class="for-table">
+						<div class="more-table">
+							<table cellspacing="0" id="enemy-sea">
+								<tr>
+									<td>&nbsp;</td>
+									<td>А</td>
+									<td>Б</td>
+									<td>В</td>
+									<td>Г</td>
+									<td>Д</td>
+									<td>Е</td>
+									<td>Ж</td>
+									<td>З</td>
+									<td>И</td>
+									<td>К</td>
+								</tr>
+								<tr>
+									<td>1</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>8</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>9</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>10</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>	
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="middle-block-center">
+					<p id="str1">Ваш ход, <span id="name-in"></span></p>
+					<p id="str2" style="display:none;">Ход компьютера</p>
+				</div>
+				<div class="hidden-inputs">
+					<input type="hidden" id="input1">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
